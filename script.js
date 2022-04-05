@@ -1,5 +1,4 @@
 
-
 //Creating the grid
 let container = document.querySelector("#container");
  
