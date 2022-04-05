@@ -14,5 +14,4 @@ function createGrid(numSquares) {
 
     }
 }
-
 createGrid(16);

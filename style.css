@@ -1,18 +1,13 @@
 
-.box {
-    border: 1px solid black;
-    box-sizing: border-box;
-    display: inline-block;
-    height: 25px;
-    width: 25px;
-}
-
-#grid-container {
+/* center the grid layout */
+#container {
     width: 500px;
     height: 500px;
+    margin: auto;
+
 }
 
-#grid-container>div {
+#container>div {
     height: 25px;
 }
 
