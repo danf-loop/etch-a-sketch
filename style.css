@@ -7,28 +7,29 @@
 
 
 /* center the grid layout */
-#container {
-    width: auto;
-    height: auto;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#container>div {
-    height: 25px;
+#container {
+    display: grid;
+    width:500px;
+    height: 500px;
+    grid-template-columns: repeat(var(--grid-rows), 1fr);
+    grid-template-rows: repeat(var(--grid-cols), 1fr);
 }
+
 
 .box {
     border: 1px solid black;
-    box-sizing: border-box;
-    display: inline-block;
-    height: 25px;
-    width: 25px;
+    text-align: center;
 }
 
 .box:hover {
     background-color: black;
 }
+
+
