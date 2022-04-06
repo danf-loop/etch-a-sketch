@@ -1,10 +1,11 @@
 
+
+
 .title {
     display: flex;
     justify-content: center;
    
 }
-
 
 /* center the grid layout */
 #cover {
@@ -20,11 +21,12 @@
     height: 500px;
     grid-template-columns: repeat(var(--grid-rows), 1fr);
     grid-template-rows: repeat(var(--grid-cols), 1fr);
+    border: 1px solid black;
 }
 
 
 .box {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
 }
 

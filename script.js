@@ -39,6 +39,7 @@ function changeGrid() {
    }
 };
 
+// random rainbow color
 
 
 
