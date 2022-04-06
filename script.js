@@ -4,10 +4,7 @@ let container = document.querySelector("#container");
 
 const button = document.getElementById("button");
 
-function clearGrid() {
-    container.style.backgroundColor = "black";
-  }
- 
+
 function createGrid(rows, cols) {
     container.style.setProperty("--grid-rows", rows);
     container.style.setProperty("--grid-cols", cols);
@@ -17,15 +14,17 @@ function createGrid(rows, cols) {
         cell.addEventListener("mouseover", colorSquare)
     }
 }
-
 createGrid(16,16)
-//hover over the box to draw black boxes
+// hover over the box to draw black boxes
 function colorSquare(event) {
     event.target.style.backgroundColor = "black";
 }
 
-// clear the the boxes
+// clear the grid
 function clearGrid() {
-    let gridSquares = document.querySelectorAll(".box")
-    gridSquares.forEach(box => {box.style.backgroundColor = null});
+    let container = document.querySelector("#container");
+    let squares = container.querySelectorAll("div");
+    squares.forEach((div) => (div.style.backgroundColor = "white"))
 }
+
+
